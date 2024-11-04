@@ -1,42 +1,32 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+    <h1>Predict Salary Analysis</h1>
 
-     <!-- Main Input For Receiving Query to our ML :
-      cylinders	displacement	horsepower	weight	acceleration	model year	origin_Asia	origin_Europe	origin_USA -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="cylinders" placeholder="Cylinders" required="required" />
-      <input type="text" name="displacement" placeholder="Displacement" required="required" />
-		  <input type="text" name="horsepower" placeholder="Horsepower" required="required" />
-      <input type="text" name="weight" placeholder="Weight" required="required" />
-      <input type="text" name="acceleration" placeholder="Acceleration" required="required" />
-      <input type="text" name="model year" placeholder="Model Year" required="required" />
-      <input type="text" name="origin_Asia" placeholder="Origin Asia ? 0/1" required="required" />
-      <input type="text" name="origin_Europe" placeholder="Origin Europe ? 0/1" required="required" />
-      <input type="text" name="origin_USA" placeholder="Origin USA ? 0/1" required="required" />
+    <form action="/predict" method="post">
+        <input type="text" name="cylinders" placeholder="Cylinders" required="required" />
+        <input type="text" name="displacement" placeholder="Displacement" required="required" />
+        <input type="text" name="horsepower" placeholder="Horsepower" required="required" />
+        <input type="text" name="weight" placeholder="Weight" required="required" />
+        <input type="text" name="acceleration" placeholder="Acceleration" required="required" />
+        <input type="text" name="model year" placeholder="Model Year" required="required" />
+        <input type="text" name="origin_Asia" placeholder="Origin Asia ? 0/1" required="required" />
+        <input type="text" name="origin_Europe" placeholder="Origin Europe ? 0/1" required="required" />
+        <input type="text" name="origin_USA" placeholder="Origin USA ? 0/1" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
-   <br>
-   <br>
-   {{ prediction_text }}
+    <br><br>
+    <p>{{ prediction_text }}</p>
 
  </div>
-
-
 </body>
 </html>
