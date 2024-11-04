@@ -17,9 +17,11 @@
         <input type="text" name="weight" placeholder="Weight" required="required" />
         <input type="text" name="acceleration" placeholder="Acceleration" required="required" />
         <input type="text" name="model year" placeholder="Model Year" required="required" />
-        <input type="text" name="origin_Asia" placeholder="Origin Asia ? 0/1" required="required" />
-        <input type="text" name="origin_Europe" placeholder="Origin Europe ? 0/1" required="required" />
-        <input type="text" name="origin_USA" placeholder="Origin USA ? 0/1" required="required" />
+        
+        <!-- Cases à cocher pour les origines -->
+        <label><input type="checkbox" name="origin_Asia" value="1"> Origin Asia</label><br>
+        <label><input type="checkbox" name="origin_Europe" value="1"> Origin Europe</label><br>
+        <label><input type="checkbox" name="origin_USA" value="1"> Origin USA</label><br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
