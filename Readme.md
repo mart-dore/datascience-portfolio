@@ -3,8 +3,7 @@
 ## Overview
 This project is a Flask-based web application that serves predictions for miles per gallon (MPG) based on various car features using a machine learning model. The application allows users to input specific characteristics of a car and receive an estimated MPG value.
 
-![overview](img/overview.png)
-
+<img src="img/overview.png" width="48">
 ## Workflow Notebook
 
 The `workflow.ipynb` file serves as the core of our project by presenting the entire decision-making process from a data science perspective. This notebook covers all essential steps, including data importation, cleaning and preprocessing, data analysis, visualization, and the application of machine learning techniques. Furthermore, it details the model training process and the saving of a pipeline, ensuring reproducibility and efficiency in the model deployment. This integrated workflow guarantees that all steps are correctly executed and documented for clear understanding and future enhancement of the project.
