@@ -17,9 +17,7 @@ The dataset used for training the model is the `mpgcar` dataset, which contains 
 - `weight`: Weight of the car
 - `acceleration`: Acceleration of the car
 - `model year`: Year of the car model
-- `origin_Asia`: Binary indicator if the car originates from Asia (0/1)
-- `origin_Europe`: Binary indicator if the car originates from Europe (0/1)
-- `origin_USA`: Binary indicator if the car originates from the USA (0/1)
+- `origin` : country of origin (1: USA, 2 : Europe, 3 : Asia(Japan))
 
 ## Installation
 
