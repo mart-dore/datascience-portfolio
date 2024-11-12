@@ -3,7 +3,7 @@
 ## Overview
 This project is a Flask-based web application that serves predictions for miles per gallon (MPG) based on various car features using a machine learning model. The application allows users to input specific characteristics of a car and receive an estimated MPG value.
 
-![overview](img\overview.png)
+![overview](img/overview.png)
 
 ## Workflow Notebook
 
